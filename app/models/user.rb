@@ -7,4 +7,8 @@ class User < ApplicationRecord
          def admin?
            email == 'xcalvin.zhao@gmail.com'
          end
+
+         def admin?
+           is_admin
+         end
 end
